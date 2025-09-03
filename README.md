@@ -1,7 +1,8 @@
-# EarthWise – Smart Soil Monitoring App
+# EarthWise - A Smart Monitoring App for Temperature and Moisture 🌿
 
-EarthWise is a cross-platform mobile application built with [Expo](https://expo.dev) and React Native, designed for real-time soil monitoring. It enables users to log, visualize, and analyze soil temperature and moisture readings, supporting sustainable agriculture and gardening practices.
+EarthWise is a versatile cross-platform mobile application built with Expo and React Native, engineered for detailed environmental monitoring. It allows users to actively log, visualize, and analyze critical readings like temperature and moisture, providing valuable insights to support sustainable agriculture and gardening practices.
 
+This app empowers both professional farmers and home gardeners to make data-driven decisions. By tracking these key metrics over time, you can optimize watering schedules, predict ideal planting times, and ensure the health of your crops and plants.
 ---
 
 ## a. Setup Instructions
@@ -18,7 +19,7 @@ EarthWise is a cross-platform mobile application built with [Expo](https://expo.
 1. **Clone the repository:**
 
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/Mohd-Fazal-khan/EarthWise.git
    cd EarthWise
    ```
 
@@ -42,25 +43,8 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
+### Features
 ---
-
-## b. Assumptions Made
-
-### Bluetooth
-
-- **No Bluetooth functionality is currently implemented.**
-- The app assumes soil readings are either simulated or entered via Firebase, not received via Bluetooth from external hardware.
-- If Bluetooth sensor integration is required, additional modules (e.g., [`react-native-ble-plx`](https://github.com/dotintent/react-native-ble-plx)) and permissions must be added, along with native code for device pairing and data acquisition.
 
 ### User Authentication
 
@@ -69,7 +53,7 @@ This command will move the starter code to the **app-example** directory and cre
 
 ### Data Storage
 
-- All soil readings are stored per user in Firebase Firestore under the `soilReadings` collection.
+- All soil readings are stored per user in Firebase Firestore under the `Readings` collection.
 
 ### Network Connectivity
 
@@ -77,7 +61,15 @@ This command will move the starter code to the **app-example** directory and cre
 - Offline mode is not supported; users must be online to use core features.
 
 ---
+## b. Assumptions Made
 
+### Bluetooth
+
+- **No Bluetooth functionality is currently implemented.**
+- The app assumes soil readings are either simulated or entered via Firebase, not received via Bluetooth from external hardware.
+- If Bluetooth sensor integration is required, additional modules (e.g., [`react-native-ble-plx`](https://github.com/dotintent/react-native-ble-plx)) and permissions must be added, along with native code for device pairing and data acquisition.
+
+  
 ## Learn more
 
 To learn more about developing your project with Expo, look at the following resources:
@@ -85,9 +77,5 @@ To learn more about developing your project with Expo, look at the following res
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Made By
+Mohd Fazal Khan
